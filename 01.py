@@ -1,4 +1,4 @@
-data = open("D:\\Rowan\\Documents\\Coding\\Python\\Advent of code\\2024\\01 data.dat", "r")
+data = open("D:\\Rowan\\OneDrive - Bradford Grammar School\\Computing\Practical\\Python\\Advent of code\\2024\\01 data.dat", "r")
 
 list1 = []
 list2 = []
@@ -16,7 +16,7 @@ distanceScore = 0
 for i in range(len(list1)):
     distanceScore += abs(list1[i] - list2[i])
 
-print(distanceScore)
+print("distanceScore:", distanceScore)
 
 #Part 2
 similarityScore = 0
@@ -24,4 +24,6 @@ similarityScore = 0
 for i in list1:
     similarityScore += i * list2.count(i)
 
-print(similarityScore)
+print("similarityScore:", similarityScore)
+
+data.close()
